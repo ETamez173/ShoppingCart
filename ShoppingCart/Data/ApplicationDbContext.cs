@@ -15,6 +15,7 @@ namespace ShoppingCart.Data
         }
         // Adam explains this ShoppingCart intro part 4 at 14 min point
 
+            // Dbsets are representations of our tables
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
         public DbSet<ShoppingItem> ShoppingItem { get; set; }
 
