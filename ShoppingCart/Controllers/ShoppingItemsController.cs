@@ -145,19 +145,7 @@ namespace ShoppingCart.Controllers
             return View(shoppingItem);
         }
 
-        //// GET: TodoItems/Delete/5
-        //public async Task<ActionResult> Delete(int id)
-        //{
-        //    var shoppingItem = await _context.ShoppingItem.Include(si => si.ProductName).FirstOrDefaultAsync(si => si.Id == id);
-        //            var todoItem = await _context.TodoItem.Include(ti => ti.TodoStatus).FirstOrDefaultAsync(ti => ti.Id == id);
-        //    return View(shoppingItem);
-        //}
-
-        //// GET: ShoppingItems/Delete/5
-        //public ActionResult Delete(int id)
-        //{
-        //    return View(shoppingItem);
-        //}
+     
 
 
         // POST: ToDoItems/Delete/5
@@ -171,39 +159,9 @@ namespace ShoppingCart.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<ActionResult> Delete(int id, ShoppingItem shoppingItem)
-        //{
-        //    try
-        //    {
-        //        _context.ShoppingItem.Remove(shoppingItem);
-        //        await _context.SaveChangesAsync();
+        
 
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
-
-        //// POST: ShoppingItems/Delete/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Delete(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        // TODO: Add delete logic here
-
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+        
        
         // vid part 9 at 22.40 min pt
         private Task<ApplicationUser> GetCurrentUserAsync() => _userManager.GetUserAsync(HttpContext.User);
